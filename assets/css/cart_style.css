@@ -1,0 +1,985 @@
+@media (min-width: 1024px) {
+    .woocommerce-cart .wp-block-table::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .woocommerce-cart .container {
+    max-width: 1472px;
+    width: 100%;
+    padding: 48px 0 144px;
+  }
+  .woocommerce-cart .wp-block-table td,
+  .woocommerce-cart .cart-collaterals .cart_totals tr td,
+  .woocommerce-cart .cart-collaterals .cart_totals tr th {
+    border: 0;
+  }
+  .ib_cart_heading {
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgb(198, 197, 198);
+  }
+  .ib_cart_heading h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    color: #1a171b;
+    margin: 48px 0 36px;
+	text-align: left;
+  }
+  .ib_cart_heading span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    color: #000;
+  }
+  .woocommerce-cart .cart-collaterals .cart_totals {
+    padding-bottom: 48px;
+    border-bottom: 0;
+  }
+  .woocommerce table.shop_table td {
+    border-color: rgb(237, 237, 237);
+  }
+  .woocommerce-cart .woocommerce a.button,
+  .woocommerce-cart .woocommerce .cart .button {
+    background: #00378b !important;
+    color: #fff !important;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    padding: 14px 32px;
+    margin-top: 20px;
+    border: 0 !important;
+    letter-spacing: normal;
+  }
+  .woocommerce-cart .woocommerce a.button:hover,
+  .woocommerce-cart .woocommerce .cart .button:hover {
+    background: #194a96 !important;
+  }
+  .woocommerce-cart .woocommerce .cart .button {
+    padding: 11px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  .ib_cart_promotions {
+    margin: 0 0 8px;
+    color: #1a171b;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .woocommerce-cart .coupon input#coupon_code {
+    border: 1px solid rgb(107, 114, 128);
+    padding: 8px 112px 8px 20px;
+    height: 56px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 4px;
+  }
+  .woocommerce-cart .coupon input#coupon_code:focus {
+    border-color: rgb(0, 55, 139);
+  }
+  .woocommerce-cart .coupon {
+    position: relative;
+  }
+  .woocommerce-cart .coupon button.button {
+    background: #00378b !important;
+    width: fit-content;
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 14px 28px;
+    border-radius: 2px;
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .woocommerce-cart .coupon button.button:hover {
+	color: #fff !important;
+    background: #194a96 !important;
+  }
+  .woocommerce-cart .cart-collaterals {
+    padding-right: 0;
+  }
+  .woocommerce-cart .cart_pageTitle {
+    color: #434144;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+  }
+  .woocommerce-cart .cart_pageTotal {
+	font-size: 32px;
+    display: table-caption;
+    margin: 0 !important;
+  }
+  .woocommerce-cart .cart_pageTotal span.amount {
+    color: #1a171b;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .woocommerce-cart .cart_item .product-thumbnail a {
+    display: block;
+    width: 260px;
+    height: 152px;
+  }
+  .woocommerce-cart .cart_item .product-thumbnail a img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto 260 / 152;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  .woocommerce-cart .cart_item .product-name a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    color: #000;
+  }
+  .woocommerce-cart .cart_item .product-name a:hover {
+    color: #00378b;
+  }
+  .woocommerce-cart table.cart td {
+    vertical-align: top;
+  }
+  .cart_item td.product-name .ib_course_meta li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #4f4c4f;
+  }
+  .cart_item td.product-price span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #1a171b;
+  }
+  .cart_item td.product-price del,
+  .cart_item td.product-price del span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000;
+    opacity: 1;
+  }
+  .cart_item td.product-quantity a.cs_remove {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: right;
+    color: #00378b;
+  }
+  .cart_item .quantity {
+    border: 1px solid rgb(229, 231, 235);
+    padding: 8px 12px;
+    margin-right: 0;
+  }
+  .cart_item td.product-quantity input.qty {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #000;
+  }
+  .cart_item td.product-quantity {
+    text-align: right;
+  }
+  @media (max-width: 1280px) {
+    .ib_course_meta {
+      flex-wrap: wrap;
+      row-gap: 5px;
+    }
+    .woocommerce-cart .cart_item .product-thumbnail a {
+      width: 120px;
+      height: 120px;
+    }
+    .woocommerce-cart .cart_item .product-name a {
+      font-size: 18px;
+      line-height: 28px;
+    }
+    .woocommerce-cart .woocommerce a.button,
+    .woocommerce-cart .woocommerce .cart .button,
+    .woocommerce-cart .coupon button.button {
+      padding: 11px 16px;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    .woocommerce-cart .coupon input#coupon_code {
+      padding: 8px 80px 8px 20px;
+      height: 48px;
+    }
+  }
+  @media (max-width: 767px) {
+    .woocommerce-cart .cart-collaterals {
+      padding: 0;
+    }
+    .woocommerce-cart .cart-subtotal td {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .woocommerce-cart .cart-collaterals .cart_totals {
+      padding-bottom: 32px;
+    }
+    .woocommerce-cart .coupon {
+      margin-bottom: 24px;
+      width: 100%;
+    }
+    .woocommerce-cart .container {
+      padding: 32px 0 80px;
+    }
+    .woocommerce-cart .cart_item .product-name a,
+    .cart_item td.product-quantity input.qty {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+    }
+    .cart_item td.product-price span {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .cart_item td.product-price del,
+    .cart_item td.product-price del span {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+    .cart_item td.product-quantity a.cs_remove,
+    .cart_item td.product-name .ib_course_meta li {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .woocommerce-cart .cart_item .product-thumbnail a {
+      width: 56px;
+      height: 56px;
+    }
+    .woocommerce-cart .cart_item td {
+      width: fit-content !important;
+    }
+  }
+
+
+		.woocommerce .woocommerce-message {
+			border-color: rgba(224, 223, 255, 1);
+			border-top-color: #8fae1b;
+			display: none;
+		}
+
+		.cart_item .product-thumbnail {
+			width: 120px;
+		}
+
+		.cart_item td.product-name {
+			padding-left: 16px !important;
+		}
+
+		.cart_item td.product-name .ib_cart_dflex {
+			align-items: center;
+			gap: 10px;
+		}
+
+		.cart_item td.product-name .ib_cart_dflex span {
+			font-family: Inter;
+			font-size: 13.12px;
+			font-weight: 600;
+			line-height: 15.88px;
+			text-align: left;
+			color: rgba(43, 53, 78, 1) rgba(43, 53, 78, 1);
+		}
+
+		.cart_item td.product-name .ib_cart_dflex svg {
+			width: 86px;
+			height: ;
+		}
+
+		.cart_item td.product-name .ib_cart_dflex .ib_cart_dflex {
+			align-items: center;
+			gap: 4px;
+		}
+
+		.cart_item td.product-name .ib_course_meta li::marker {
+			margin: 0px !important;
+		}
+
+
+		.cart_item td.product-price {
+			display: flex;
+			flex-direction: column-reverse;
+			justify-content: center;
+			align-items: end;
+		}
+
+		.cart_item td.product-quantity input.qty {
+			border: 0.71px solid rgba(224, 223, 255, 1);
+			border-radius: 3px;
+			width: 51.1px;
+			padding-left: 10px;
+			text-align: left;
+		}
+
+		.cart_totals span.amount {
+			color: rgba(43, 53, 78, 1);
+			font-family: Inter;
+			font-weight: 800;
+			text-align: left;
+		}
+
+		.cart_totals h2 {
+			color: rgba(43, 53, 78, 1);
+			font-family: Inter;
+			font-weight: 800;
+			text-align: left;
+		}
+
+		.cart_totals th {
+			color: rgba(43, 53, 78, 1);
+			font-family: Inter;
+			font-weight: 800;
+			text-align: left;
+		}
+
+		input.xs-add-to-cart-button[type="checkbox"] {
+			background: #ebebeb !important;
+		}
+
+		input.xs-add-to-cart-button:checked[type="checkbox"] {
+			background: #00378b !important;
+		}
+
+		.special-products-wrapper::before {
+			height: 2px !important;
+			background: #e0dfff !important;
+		}
+
+		.special-products-wrapper {
+			padding-top: 10px !important;
+		}
+
+		p.special-product-name {
+			font-family: "Inter", sans-serif;
+			font-size: 16px !important;
+			font-weight: 500;
+			line-height: 24px;
+			color: #2b354e;
+		}
+
+		.special-offer-title h2 {
+			font-family: "Inter", sans-serif;
+			font-size: 28px;
+			font-weight: 700;
+			line-height: 37.97px;
+		}
+
+		@media (max-width: 528px) {
+			.cart_item .product-name a {
+				font-size: 12px;
+				line-height: normal;
+			}
+
+			.ib_course_meta {
+				column-gap: 10px;
+				flex-wrap: wrap;
+				row-gap: 5px;
+			}
+
+			.cart_item td.product-name .ib_course_meta li {
+				font-size: 10px;
+				white-space: nowrap;
+			}
+
+			.woocommerce-message {
+				display: flex;
+				flex-direction: column-reverse;
+			}
+
+			.woocommerce-cart .woocommerce a.button {
+				margin-top: 10px;
+			}
+
+			td.product-name {
+				padding-right: 10px !important;
+			}
+		}
+
+		.ks-star-rating .rating__background {
+			fill: #BFC3CA;
+			stroke: red;
+			stroke-width: 1;
+			height: 100%;
+			width: 100%;
+		}
+
+		.ks-star-rating .rating__value {
+			fill: #FFBE00;
+			height: 100%;
+		}
+
+		.ks-star-rating {
+			width: 70px;
+		}
+
+		.ib_cart_users>img {
+			width: auto !important;
+		}
+
+		.ib_cart_dflex {
+			display: flex;
+		}
+
+		.ib_course_meta {
+			display: flex;
+			color: #64748B;
+			gap: 20px;
+		}
+
+		.ib_course_meta li:first-child {
+			list-style: none;
+		}
+
+		/* .quantity {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #e0dfff;
+            padding: 10px;
+        }
+
+        .quantity-controls {
+            width: 6px;
+            text-align: center;
+            cursor: pointer;
+            display: block;
+        }
+
+        .cart_item td.product-quantity input.qty {
+            border: 0 !important;
+            text-align: center;
+            padding: 0 !important;
+        }
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+        }
+
+        @media (max-width: 767px) {
+            .quantity {
+                padding: 0px;
+            }
+        } */
+
+		.ib_cart_promotions {
+			color: #2b354e;
+			font-size: 14px;
+			font-weight: 600;
+			font-family: 'Inter';
+		}
+
+		.ib_cart_coupon_remove {
+			font-size: 12px;
+			color: #64748b;
+			font-weight: 400;
+			font-family: 'Inter';
+			margin-bottom: 10px;
+		}
+
+		.ib_cart_coupon_remove span {
+			font-family: 'Inter';
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 18.39px;
+			text-align: left;
+			text-transform: uppercase;
+		}
+
+		.coupon {
+			display: flex;
+		}
+
+		.coupon input#coupon_code {
+			border: 1px solid #E0DFFF;
+			padding: 17px;
+			height: 42px;
+		}
+
+		
+
+		td.product-name {
+			padding-right: 50px !important;
+		}
+
+		.coupon button.button {
+			background: #00378b !important;
+			width: 49%;
+			border-radius: 0;
+		}
+
+		/* css for slider start */
+
+		.ib_slider_heading {
+			font-family: 'Inter', Public Sans;
+			font-size: 32px;
+			font-weight: 700;
+			line-height: 44.8px;
+			text-align: left;
+			color: #2B354E;
+		}
+
+		.dis-course-slider {
+			max-width: 100%;
+			margin: 0 auto;
+		}
+
+		.dis-course-slider-item {
+			display: flex !important;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.dis-course-slider-item .r-ibm-4-course-card-h {
+			max-width: 280px;
+			border-radius: 6px;
+			border: 1.01px solid #e0dfff;
+			padding: 10px;
+			background-color: #fefdfe;
+			transition: all linear 0.3s;
+			-webkit-transition: all linear 0.3s;
+			-moz-transition: all linear 0.3s;
+			-ms-transition: all linear 0.3s;
+			-o-transition: all linear 0.3s;
+		}
+
+		.r-ibm-4-course-card-h .course-image {
+			height: 190px;
+			border-radius: 6px;
+			overflow: hidden;
+		}
+
+		.r-ibm-4-course-card-h .course-image img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 6px;
+		}
+
+		.r-ibm-4-course-card-h .course-detail {
+			padding: 18px 4.99px 8.87px;
+		}
+
+		.r-ibm-4-course-card-h .course-detail h4.course-title {
+			margin: 0;
+		}
+
+		.r-ibm-4-course-card-h .course-detail h4.course-title a {
+			font-family: "Public Sans", sans-serif;
+			font-size: 18px;
+			font-weight: 600;
+			line-height: 25.2px;
+			text-align: left;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			line-clamp: 2;
+			-webkit-box-orient: vertical;
+			text-decoration: none;
+			color: #374151;
+			margin: 0 0 7.7px;
+			height: 50px;
+		}
+
+		.r-ibm-4-course-card-h .course-detail .course-description p {
+			font-family: "Inter", sans-serif;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 19.61px;
+			text-align: left;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			line-clamp: 2;
+			-webkit-box-orient: vertical;
+			text-decoration: none;
+			color: #475569;
+			margin: 0 0 16px;
+		}
+
+		.r-ibm-4-course-card-h .course-detail .pricing-students-ratings {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.r-ibm-4-course-card-h .course-detail .pricing-students-ratings .pricing {
+			display: flex;
+			align-items: center;
+			gap: 5px;
+		}
+
+		.r-ibm-4-course-card-h .course-detail .pricing-students-ratings .pricing ins {
+			font-family: Inter;
+			font-size: 26px;
+			font-weight: 800;
+			line-height: 28.6px;
+			text-align: left;
+			color: #2B354E;
+			text-decoration: none;
+		}
+
+		.r-ibm-4-course-card-h .course-detail .pricing-students-ratings .pricing del {
+			font-family: Inter;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 17.6px;
+			text-align: left;
+			color: #00378b4D;
+			opacity: 1;
+		}
+
+		.r-ibm-4-course-card-h .course-detail .pricing-students-ratings .ratings .students-ratings .rating__background {
+			fill: #bfc3ca;
+			stroke: red;
+			stroke-width: 1;
+			height: 100%;
+			width: 100%;
+		}
+
+		.r-ibm-4-course-card-h .course-detail .pricing-students-ratings .students-ratings p.students {
+			font-family: Inter;
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 14.52px;
+			letter-spacing: 0.1em;
+			color: #475569;
+			margin: 0;
+			padding: 0;
+		}
+
+		.students-ratings p.students img {
+			margin-right: 7px;
+		}
+
+		.r-ibm-4-course-card-h .star-ratings {
+			unicode-bidi: bidi-override;
+			color: #ccc;
+			font-size: 18px;
+			position: relative;
+			margin: 0;
+			padding: 0;
+		}
+
+		.r-ibm-4-course-card-h .star-ratings .fill-ratings {
+			color: #ffbe00;
+			padding: 0;
+			position: absolute;
+			z-index: 1;
+			display: block;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+		}
+
+		.r-ibm-4-course-card-h .star-ratings .fill-ratings span {
+			display: inline-block;
+		}
+
+		.r-ibm-4-course-card-h .star-ratings .empty-ratings {
+			padding: 0;
+			display: block;
+			z-index: 0;
+		}
+
+		.r-ibm-4-course-card-h .add-to-cart a {
+			font-family: Inter;
+			font-size: 12px;
+			font-weight: 600;
+			line-height: 18.01px;
+			color: #374151;
+			padding: 11px;
+			text-decoration: none;
+			display: block;
+			text-align: center;
+			text-transform: uppercase;
+			margin: 15px 0 0 0;
+			border: 1px solid #475569;
+			border-radius: 3px;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			-ms-border-radius: 3px;
+			-o-border-radius: 3px;
+			transition: all linear 0.3s;
+			-webkit-transition: all linear 0.3s;
+			-moz-transition: all linear 0.3s;
+			-ms-transition: all linear 0.3s;
+			-o-transition: all linear 0.3s;
+		}
+
+		.r-ibm-4-course-card-h:hover {
+			background-color: #FCF8FF;
+		}
+
+		.r-ibm-4-course-card-h .add-to-cart a:hover {
+			color: #FFFFFF;
+			background-color: #00378b;
+		}
+
+		.dis-course-slider button.slick-arrow {
+			color: #FFF;
+			font-size: 19px;
+			background: #2D2F31;
+			border: 1px solid #FFF;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			position: absolute;
+			top: 101px;
+			z-index: 7;
+			cursor: pointer;
+		}
+
+		.dis-course-slider button.arrow-prev {
+			left: -3px;
+		}
+
+		.dis-course-slider button.arrow-next {
+			right: -5px;
+		}
+
+		.dis-course-slider button.slick-disabled {
+			opacity: 0;
+		}
+
+
+		/* ============= Media Queries ============= */
+
+		@media (max-width:1279px) {
+
+			.dis-course-slider-item .r-ibm-4-course-card-h {
+				max-width: 251px;
+			}
+
+			.dis-course-slider button.slick-arrow {
+				top: 165px;
+			}
+
+			.dis-course-slider button.arrow-prev {
+				left: 9px;
+			}
+
+			.dis-course-slider button.arrow-next {
+				right: 9px;
+			}
+		}
+
+		@media (max-width: 1055px) {
+			.dis-course-slider-item .r-ibm-4-course-card-h {
+				max-width: 275px;
+			}
+		}
+
+		@media (max-width: 857px) {
+			.dis-course-slider-item .r-ibm-4-course-card-h {
+				max-width: 255px;
+			}
+		}
+
+		@media (max-width: 805px) {
+			.dis-course-slider-item .r-ibm-4-course-card-h {
+				max-width: 285px;
+			}
+		}
+
+		/* css for slider end */
+
+		button[type="submit"].button,
+		a.button {
+			color: #fff !important;
+			border: 1px solid #00378b !important;
+		}
+
+		button[type="submit"].button:hover,
+		a.button:hover {
+			color: #374151 !important;
+			border: 1px solid #475569 !important;
+			background: transparent !important;
+		}
+
+		.quantity {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid #e0dfff;
+			padding: 10px;
+			margin-right: 10px;
+		}
+
+		.minus,
+		.plus {
+			width: 6px;
+			text-align: center;
+			cursor: pointer;
+			display: block;
+			border: none;
+			padding: 0;
+			background: transparent;
+			color: #64748b;
+		}
+
+		.cart_item td.product-quantity input.qty {
+			border: 0 !important;
+			text-align: center;
+			padding: 0 !important;
+		}
+
+		.qty::-webkit-inner-spin-button,
+		.qty::-webkit-outer-spin-button {
+			-webkit-appearance: none;
+		}
+
+		@media (max-width: 767px) {
+			.quantity {
+				padding: 0px;
+			}
+
+			.cart_item td.product-quantity input.qty {
+				width: 40px;
+			}
+
+			td.product-name {
+				padding-right: 30px !important;
+			}
+
+			p.special-product-name {
+				width: -webkit-fill-available;
+			}
+
+			.wc-proceed-to-checkout {
+				position: fixed;
+				bottom: 0px;
+				left: 0;
+				background: #fff;
+				width: 100%;
+				padding: 20px 25px;
+				z-index: 99;
+			}
+
+			.woocommerce-cart .woocommerce a.button {
+				margin: 0 !important;
+				width: 100%;
+			}
+
+			.woocommerce-cart #content {
+				padding-top: 40px !important;
+			}
+
+			form.woocommerce-cart-form {
+				display: flex;
+				flex-direction: column-reverse;
+			}
+
+			.ib_cart_heading h1 {
+				display: none;
+			}
+
+			.woocommerce-cart .cart-collaterals {
+				padding: 40px 15px;
+			}
+
+			.ib_course_meta {
+				column-gap: 10px !important;
+				flex-wrap: wrap;
+				row-gap: 0px !important;
+			}
+
+			.special-offer-title {
+				margin-bottom: 10px;
+			}
+
+			.special-offer-title h2 {
+				margin: 25px 0 0 0;
+				font-size: 14px;
+			}
+
+			p.special-product-name {
+				font-size: 12px !important;
+				margin: 0;
+			}
+
+			.special-products-single {
+				margin-bottom: 10px;
+			}
+
+			input.xs-add-to-cart-button[type="checkbox"] {
+				margin: 0;
+			}
+
+			.special-products-wrapper {
+				margin-bottom: 40px;
+			}
+
+			.ib_slider_heading {
+				margin: 0 0 10px;
+				font-size: 18px;
+			}
+
+			.woocommerce-cart .cart-collaterals .cart_totals {
+				padding-bottom: 0;
+			}
+		}
+	
+      
+    
+    
+        .woocommerce-cart .cart-collaterals .cart_totals table td {
+            text-align: left;
+        }
+    
+        .off_textcart {
+            color: #64748B;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: 'Inter';
+            margin: 0;
+            display: inline-grid;
+            line-height: 24px;
+        }
+    
+        .off_textcart del {
+            opacity: 1;
+        }
+    
+        .woocommerce-cart .cart-collaterals {
+            border: none !important;
+        }
+    
+        
+    
+        .custom_cart_cop {
+            width: 50% !important;
+            font-size: 12px;
+        }

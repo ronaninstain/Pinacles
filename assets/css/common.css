@@ -1,0 +1,1097 @@
+/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+/** {
+  scrollbar-width: thin;
+  scrollbar-color: #00378B #DFE9EB;
+}*/
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #DFE9EB;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #DFE9EB;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #DFE9EB;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #00378B;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #0046B0;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #4C63A3;
+}
+
+
+
+/* Log in page css  */
+.page-id-499181 section#content {
+  background: #e6ebf3;
+}
+
+.page-id-499181 section#content .elementor-form-fields-wrapper {
+  max-width: 624px;
+  background: #fff;
+  margin: 64px auto;
+  box-shadow: 0px 2px 4px -2px rgba(16, 24, 40, .06), 0px 4px 8px -2px rgba(16, 24, 40, .1);
+  border-radius: 8px;
+  padding: 56px;
+}
+
+.page-id-499181 section#content .elementor-field-group>label {
+  margin: 0 0 8px;
+  display: block;
+  color: #4f4c4f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.page-id-499181 section#content .elementor-field-group input[type=text],
+.page-id-499181 section#content .elementor-field-group input[type=password] {
+  width: 100%;
+  height: 48px;
+  border-radius: 2px;
+  border: 1px solid #caced8;
+  background: #fff;
+  color: #1a171b;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 16px;
+  outline: none;
+}
+
+.page-id-499181 section#content .elementor-field-group input[type=text]:focus,
+.page-id-499181 section#content .elementor-field-group input[type=password]:focus {
+  border-color: #00378b;
+}
+
+.page-id-499181 section#content .elementor-field-group button[type=submit] {
+  margin: 0 0;
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  background: rgb(0, 55, 139);
+  border: 0;
+  letter-spacing: normal;
+  border-radius: 0;
+}
+
+.page-id-499181 section#content .elementor-lost-password {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-right: 8px;
+}
+
+.page-id-499181 section#content .elementor-lost-password:hover {
+  color: rgb(0, 55, 139);
+}
+
+.page-id-499181 section#content .elementor-register {
+  color: rgb(0, 55, 139);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-left: 8px;
+}
+
+.page-id-499181 section#content .elementor-form-fields-wrapper .elementor-field-group:last-child {
+  justify-content: center;
+}
+
+@media(max-width: 767px) {
+  .page-id-499181 section#content .elementor-form-fields-wrapper {
+    padding: 22px;
+  }
+
+  .page-id-499181 section#content .elementor-login-separator {
+    display: none;
+  }
+
+  .page-id-499181 section#content .elementor-register {
+    margin-left: 0;
+  }
+
+  .page-id-499181 section#content .elementor-form-fields-wrapper .elementor-field-group:last-child {
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+  }
+
+}
+/* Log in page css end*/
+
+/* registration page css start by Nabil */
+.registration #content,
+.registration #title {
+  background: #e6ebf3 !important;
+}
+.registration #content {
+  padding-bottom: 64px;
+}
+.registration #title {
+  text-align: center;
+}
+.registration .col-md-3 {
+  display: none;
+}
+.registration .col-md-9 {
+  margin: 0 auto;
+  float: none;
+  background: #fff;
+  width: 100% !important;
+  max-width: 624px !important;
+  border-radius: 8px;
+  padding: 0px 56px;
+  box-shadow: rgba(16, 24, 40, 0.1) 0px 4px 8px -2px;
+}
+.registration #buddypress #register-page p {
+  font-family: "Open Sans", sans-serif;
+}
+.registration #buddypress #register-page form > p {
+  margin: 0;
+  color: #434144;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#buddypress #register-page .editfield {
+  margin-top: 24px;
+}
+#buddypress #register-page form label,
+#buddypress #register-page form legend {
+  margin: 0 0 8px;
+  color: #4f4c4f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  border: 0;
+}
+#buddypress #register-page .field-visibility-settings-notoggle,
+#buddypress #register-page .field-visibility-settings-toggle {
+  margin: 4px 0 0;
+  color: #5c5a5d;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400 !important;
+  line-height: 20px;
+  font-style: normal;
+  text-transform: math-auto;
+}
+#buddypress #register-page .field-visibility-settings-toggle {
+  margin-bottom: 16px;
+}
+#buddypress
+  #register-page
+  form
+  input:not([type="checkbox"], [type="radio"], [type="submit"]) {
+  width: 100%;
+  height: 48px;
+  border-radius: 2px;
+  border: 1px solid #caced8;
+  background: #fff;
+  color: #1a171b;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 16px;
+  outline: none;
+  box-shadow: rgb(198, 197, 198) 0px 0px 0px 0px;
+}
+#buddypress #register-page form input:focus {
+  border-color: #00378b;
+}
+#buddypress #register-page form .editfield:has(input:focus) label,
+#buddypress #register-page form .editfield:has(input:focus) legend {
+  color: #00378b;
+}
+#buddypress #register-page form input:focus::placeholder {
+  color: rgba(0, 56, 139, 0.6);
+}
+#buddypress #register-page .register-section h4 {
+  margin: 0;
+  padding: 16px 0;
+  font-family: "Open Sans", sans-serif;
+  color: #1a171b;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  border: 0;
+}
+#buddypress #register-page .register-section h4:after {
+  top: 50%;
+  transform: translateY(-50%);
+}
+#buddypress #register-page form input[type="checkbox"] {
+  accent-color: #00327e;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  margin: 8px 0 0;
+}
+#buddypress
+  #register-page
+  form
+  .terms_conditions_container
+  input[type="checkbox"]
+  + strong {
+  font-family: "Open Sans", sans-serif;
+  color: #1a171b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 0 8px;
+}
+#buddypress #register-page form input[type="submit"] {
+  margin: 16px 0;
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  background: rgb(0, 55, 139);
+  border: 0;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#buddypress #register-page form input[type="submit"]:hover {
+  background: #104392;
+}
+#buddypress #register-page #basic-details-section > .editfield:nth-child(4) {
+  padding-right: 16px;
+}
+@media (max-width: 767px) {
+  #buddypress
+    #register-page
+    form
+    input:not([type="checkbox"], [type="radio"], [type="submit"]) {
+    height: 40px;
+    padding: 0 16px;
+  }
+  #buddypress #register-page form input[type="submit"] {
+    padding: 11px 16px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .registration .col-md-9 {
+    padding: 0 32px;
+  }
+  #buddypress #register-page #basic-details-section > .editfield:nth-child(4) {
+    padding-right: 0;
+  }
+}
+/* registration page css End by Nabil */
+
+
+
+/* Loader For Subscription */
+#ajax-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spinner {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #00378b; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* reviews card design css start */
+.a2n-apex-review-card {
+    padding: 24px;
+    padding-bottom: 0;
+    position: relative;
+    border: 1px solid rgb(229, 231, 235);
+    box-shadow: rgba(16, 24, 40, 0.05) 0px 1px 2px 0px;
+    background-color: #fafafa;
+    max-width: 384px;
+    width: 100%;
+    margin: 0 auto;
+    break-inside: avoid;
+}
+
+.a2n-apex-review-card .review-rh {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 8px;
+}
+
+.a2n-apex-review-card .review-rh svg {
+    height: 24px;
+    width: 24px;
+}
+
+.a2n-apex-review-card .review-rh p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 48px;
+}
+
+.a2n-apex-review-card .floating-r-card-h {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+    position: absolute;
+    background-color: #fff;
+    top: -16px;
+    left: 100%;
+    z-index: 2;
+    width: 0;
+    height: 288px;
+    visibility: hidden;
+    border-radius: 4px;
+    box-shadow: rgba(16, 24, 40, 0.08) 0px 20px 24px -4px;
+    transition: width .1s ease-in;
+}
+
+.a2n-apex-review-card .a2n_shape {
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    z-index: 20;
+    transform: rotate(45deg);
+    width: 48px;
+    height: 48px;
+    background: #fff;
+}
+
+.a2n-apex-review-card .user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 24px;
+}
+
+.a2n-apex-review-card .user .imfrh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    background-color: #000;
+}
+
+.a2n-apex-review-card .user .imfrh span {
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+
+.a2n-apex-review-card .user .name-rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.a2n-apex-review-card .user .name-rating span {
+    font-size: 16px;
+    line-height: 24px;
+    color: #1a171b;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+
+.a2n-apex-review-card .user .ks-star-rating .rating__background {
+    fill: #bfc3ca;
+    stroke: red;
+    stroke-width: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.a2n-apex-review-card .user .ks-star-rating .rating__value {
+    fill: #f8ba01;
+    height: 100%;
+}
+
+.a2n-apex-review-card .user .ks-star-rating {
+    width: 70px;
+}
+
+.a2n-apex-review-card hr {
+    border-top: 1px solid #e5e7eb;
+    margin: 20px 0;
+}
+
+.a2n-apex-review-card .course-name-img {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    padding-bottom: 16px;
+}
+
+.a2n-apex-review-card .course-name-img img {
+    height: 56px;
+    width: 56px;
+    object-fit: cover;
+}
+
+.a2n-apex-review-card .course-name-img h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #00378b;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.a2n-apex-review-card .floating-r-card-h .course_card_rh .course_info {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    position: relative;
+    z-index: 25;
+}
+
+.a2n-apex-review-card .floating-r-card-h .course_card_rh .course_info .pricee {
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 700;
+    color: #1a171b;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.a2n-apex-review-card .floating-r-card-h .course_card_rh .course_info .pricee del {
+  display: none;
+}
+.a2n-apex-review-card .floating-r-card-h .course_card_rh .course_info .cat_stdnt {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.a2n-apex-review-card .floating-r-card-h .course_card_rh .course_info .cat_stdnt .category,
+.a2n-apex-review-card .floating-r-card-h .course_card_rh .course_info .cat_stdnt .student {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.a2n-apex-review-card .floating-r-card-h .course_card_rh .course_info .cat_stdnt .category svg,
+.a2n-apex-review-card .floating-r-card-h .course_card_rh .course_info .cat_stdnt .student svg {
+    height: 16px;
+    width: 16px;
+}
+
+.a2n-apex-review-card .floating-r-card-h .course_card_rh .course_info .cat_stdnt .category .cat,
+.a2n-apex-review-card .floating-r-card-h .course_card_rh .course_info .cat_stdnt .student .cat {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.a2n-apex-review-card .floating-r-card-h .course_card_rh .course_info .cat_stdnt .category .cat span,
+.a2n-apex-review-card .floating-r-card-h .course_card_rh .course_info .cat_stdnt .student .cat span {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #1a171b;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+.a2n-apex-review-card .floating-r-card-h .course_card_rh .course_info .cat_stdnt .category .cat a,
+.a2n-apex-review-card .floating-r-card-h .course_card_rh .course_info .cat_stdnt .student .cat small {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #434144;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.a2n-apex-review-card .floating-r-card-h .course_card_rh .course_info .cat_stdnt .category .cat a:hover {
+    color: #00378b;
+}
+
+.a2n-apex-review-card .floating-r-card-h .course_card_rh .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.a2n-apex-review-card .floating-r-card-h .course_card_rh .buttons a {
+    width: 50%;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+.a2n-apex-review-card .floating-r-card-h .course_card_rh .buttons a.view-details {
+    background-color: #a9f67b;
+    color: #1a171b;
+}
+
+.a2n-apex-review-card .floating-r-card-h .course_card_rh .buttons a.view-details:hover {
+    background-color: #baf895;
+}
+
+.a2n-apex-review-card .floating-r-card-h .course_card_rh .buttons a.to-cart {
+    background-color: #00378b;
+    color: #fff;
+}
+
+.a2n-apex-review-card .floating-r-card-h .course_card_rh .buttons a.to-cart:hover {
+    background-color: #194a96;
+}
+
+.a2n-apex-review-card:hover .floating-r-card-h {
+    width: 100%;
+    visibility: visible;
+}
+
+@media (min-width: 1025px) {
+    .a2n_review_pr>.elementor-element:nth-child(3n) .a2n-apex-review-card .floating-r-card-h {
+        left: auto;
+        right: 100%;
+    }
+
+    .a2n_review_pr>.elementor-element:nth-child(3n) .a2n-apex-review-card .a2n_shape {
+        left: auto;
+        right: -8px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .a2n_review_pr>.elementor-element:nth-child(even) .a2n-apex-review-card .floating-r-card-h {
+        left: auto;
+        right: 100%;
+    }
+
+    .a2n_review_pr>.elementor-element:nth-child(even) .a2n-apex-review-card .a2n_shape {
+        left: auto;
+        right: -8px;
+    }
+}
+
+@media (max-width: 767px) {
+    .a2n-apex-review-card .floating-r-card-h {
+        display: none;
+    }
+}
+
+.a2n-apex-review-card hr {
+  border-top: 1px solid #e5e7eb;
+  margin: 20px 0 !important;
+}
+.reviews_content_wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-gap: 32px;
+  place-content: center;
+}
+@media (min-width: 1025px) {
+  .reviews_content_wrapper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+    .reviews_content_wrapper
+    .a2n-apex-review-card:nth-child(3n)
+    .floating-r-card-h {
+    left: auto;
+    right: 100%;
+  }
+    .reviews_content_wrapper
+    .a2n-apex-review-card:nth-child(3n)
+    .a2n_shape {
+    left: auto;
+    right: -8px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .reviews_content_wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+    .reviews_content_wrapper
+    .a2n-apex-review-card:nth-child(even)
+    .floating-r-card-h {
+    left: auto;
+    right: 100%;
+  }
+  
+    .reviews_content_wrapper
+    .a2n-apex-review-card:nth-child(even)
+    .a2n_shape {
+    left: auto;
+    right: -8px;
+  }
+}
+
+.a2n-Load_more {
+  width: fit-content;
+  margin: 40px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00378b;
+  text-align: center;
+  font-family: "Open sans", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 600;
+  border-radius: 2px;
+  background: #fff;
+  text-transform: capitalize;
+  padding: 14px 32px;
+  transition: all 0.3s ease;
+  border: 1px solid #00378b;
+  cursor: pointer;
+}
+.a2n-Load_more:hover {
+  background: #e6ebf3;
+  border-color: transparent;
+}
+/* reviews card design css end  */
+
+/*slider css here */
+.a2n_rv_slider .elementor-swiper-button  {
+  font-size: 19px !important;
+  color: rgb(0, 55, 139) !important;
+  border: 1px solid rgb(0, 55, 139) !important;
+  padding: 14px 15px !important;
+  border-radius: 50% !important;
+  transition: 0.3s  !important;
+  z-index: 99 !important;
+}
+.a2n_rv_slider .elementor-swiper-button-prev {
+  left: -6% !important;
+}
+.a2n_rv_slider .elementor-swiper-button-next {
+  right: -6% !important;
+}
+.a2n_rv_slider .elementor-swiper-button:hover {
+  background: rgb(0, 55, 139);
+  color: #fff !important;
+}
+.a2n_rv_slider .elementor-swiper-button .eicon-chevron-left::before {
+  content: "\f060" !important;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}.a2n_rv_slider .elementor-swiper-button .eicon-chevron-right::before {
+  content: "\f061" !important;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+@media (max-width: 1280px){
+  .a2n_rv_slider .elementor-swiper-button {
+      display: none !important;
+  }
+}
+@media (max-width: 639px){
+  .apexr4h-slider-rvw  .elementor-main-swiper{
+    width: 100% !important;
+  }
+}
+/*card css*/
+.r4h-apex-review-card {
+padding: 24px;
+position: relative;
+border: 1px solid rgb(229, 231, 235);
+box-shadow: 0px 2px 4px -2px rgba(16, 24, 40, 0.06),
+  0px 4px 8px -2px rgba(16, 24, 40, 0.1);
+  height: 340px;
+  overflow: hidden;
+  background-color: #fff;
+
+/* 
+  max-width: 347px;
+  margin: 0 auto; */
+}
+.r4h-apex-review-card .review-rh {
+display: flex;
+flex-direction: column;
+gap: 12px;
+position: relative;
+z-index: 1;
+}
+.r4h-apex-review-card .review-rh svg {
+height: 24px;
+width: 24px;
+}
+.r4h-apex-review-card .review-rh p {
+font-size: 16px;
+line-height: 24px;
+font-weight: 400;
+color: #000;
+margin: 0;
+padding: 0;
+font-family: "Open Sans", sans-serif;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 4;
+line-clamp: 4;
+-webkit-box-orient: vertical;
+}
+.r4h-apex-review-card .floating-r-card-h {
+padding-top: 24px;
+padding-left: 24px;
+padding: 24px;
+position: absolute;
+background-color: #fff;
+top: 48%;
+left: 0;
+transition: all 0.5s ease;
+z-index: 2;
+}
+.r4h-apex-review-card .floating-r-card-h .course_card_rh {
+  padding-bottom: 16px;
+}
+.r4h-apex-review-card .floating-r-card-h:has(div.course_card_rh:hover){
+  top: -7px;
+}
+.r4h-apex-review-card .floating-r-card-h .user {
+display: flex;
+align-items: center;
+gap: 8px;
+
+}
+.r4h-apex-review-card .floating-r-card-h .user .imfrh {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 40px;
+width: 40px;
+border-radius: 40px;
+background-color: #000;
+}
+.r4h-apex-review-card .floating-r-card-h .user .imfrh span {
+font-size: 16px;
+line-height: 24px;
+color: #ffffff;
+font-weight: 700;
+font-family: "Open Sans", sans-serif;
+}
+.r4h-apex-review-card .floating-r-card-h .user .name-rating{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.r4h-apex-review-card .floating-r-card-h .user .name-rating span {
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+font-weight: 700;
+font-family: "Open Sans", sans-serif;
+}
+.r4h-apex-review-card .floating-r-card-h .user .ks-star-rating {
+  max-width: 70px;
+}
+.r4h-apex-review-card .floating-r-card-h .user .ks-star-rating .rating__background {
+  fill: #bfc3ca;
+  stroke: red;
+  stroke-width: 1;
+  height: 100%;
+  width: 100%;
+}
+.r4h-apex-review-card .floating-r-card-h .user .ks-star-rating .rating__value {
+  fill: #ffbe00;
+  height: 100%;
+}
+.r4h-apex-review-card .floating-r-card-h .user .ks-star-rating {
+  width: 70px;
+}
+.r4h-apex-review-card .floating-r-card-h hr {
+border-top: 1px solid #e5e7eb;
+margin: 10px 0 20px;
+}
+.r4h-apex-review-card .floating-r-card-h .course_card_rh a {
+display: flex;
+align-items: center;
+gap: 8px;
+text-decoration: none;
+}
+.r4h-apex-review-card .floating-r-card-h .course_card_rh a img {
+height: 54px;
+width: 54px;
+object-fit: cover;
+}
+.r4h-apex-review-card .floating-r-card-h .course_card_rh a h3 {
+font-size: 16px;
+line-height: 24px;
+font-weight: 600;
+color: #00378b;
+margin: 0;
+padding: 0;
+font-family: "Open Sans", sans-serif;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+line-clamp: 2;
+-webkit-box-orient: vertical;
+}
+.r4h-apex-review-card .floating-r-card-h .course_card_rh .course_info {
+margin: 14px 0;
+display: flex;
+flex-direction: column;
+gap: 14px;
+}
+.r4h-apex-review-card .floating-r-card-h .course_card_rh .course_info .pricee {
+font-size: 30px;
+line-height: 38px;
+font-weight: 700;
+color: #1a171b;
+text-decoration: none;
+font-family: "Open Sans", sans-serif;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 1;
+line-clamp: 1;
+-webkit-box-orient: vertical;
+}
+.r4h-apex-review-card .floating-r-card-h .course_card_rh .course_info .cat_stdnt {
+display: flex;
+flex-direction: column;
+gap: 7px;
+}
+.r4h-apex-review-card
+.floating-r-card-h
+.course_card_rh
+.course_info
+.cat_stdnt
+.category,
+.r4h-apex-review-card
+.floating-r-card-h
+.course_card_rh
+.course_info
+.cat_stdnt
+.student {
+display: flex;
+gap: 7px;
+align-items: center;
+}
+.r4h-apex-review-card
+.floating-r-card-h
+.course_card_rh
+.course_info
+.cat_stdnt
+.category
+svg,
+.r4h-apex-review-card
+.floating-r-card-h
+.course_card_rh
+.course_info
+.cat_stdnt
+.student
+svg {
+height: 16px;
+width: 16px;
+}
+.r4h-apex-review-card
+.floating-r-card-h
+.course_card_rh
+.course_info
+.cat_stdnt
+.category
+.cat,
+.r4h-apex-review-card
+.floating-r-card-h
+.course_card_rh
+.course_info
+.cat_stdnt
+.student
+.cat {
+display: flex;
+align-items: center;
+gap: 4px;
+}
+.r4h-apex-review-card
+.floating-r-card-h
+.course_card_rh
+.course_info
+.cat_stdnt
+.category
+.cat span,
+.r4h-apex-review-card
+.floating-r-card-h
+.course_card_rh
+.course_info
+.cat_stdnt
+.student
+.cat span{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #1a171b;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+.r4h-apex-review-card
+.floating-r-card-h
+.course_card_rh
+.course_info
+.cat_stdnt
+.category
+.cat a,
+.r4h-apex-review-card
+.floating-r-card-h
+.course_card_rh
+.course_info
+.cat_stdnt
+.student
+.cat small{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #434144;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.r4h-apex-review-card
+.floating-r-card-h
+.course_card_rh
+.course_info
+.cat_stdnt
+.category
+.cat a:hover{
+  color: #00378b;
+}
+.r4h-apex-review-card
+.floating-r-card-h
+.course_card_rh .buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.r4h-apex-review-card
+.floating-r-card-h
+.course_card_rh .buttons a{
+  width: 50%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+.r4h-apex-review-card
+.floating-r-card-h
+.course_card_rh .buttons a.view-details{
+  background-color: #a9f67b;
+  color: #1a171b;
+}
+.r4h-apex-review-card
+.floating-r-card-h
+.course_card_rh .buttons a.view-details:hover{
+  background-color: #baf895;
+}
+.r4h-apex-review-card
+.floating-r-card-h
+.course_card_rh .buttons a.to-cart{
+  background-color: #00378b;
+  color: #fff;
+}
+.r4h-apex-review-card
+.floating-r-card-h
+.course_card_rh .buttons a.to-cart:hover{
+  background-color: #194a96;
+}
+
+
+
+.course_pursue_panel .more_course {
+  bottom: 50px !important;
+}

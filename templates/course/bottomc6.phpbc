@@ -1,0 +1,30 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+do_action('wplms_single_course_content_end');
+?>
+<script>jQuery('.block.course7 .block_content a.button').text('Buy Now');</script>
+
+				</div> <!--/.top header col md 8-->
+
+				<!-- <div class="col-md-4 single-page-sidebar-area">
+				    <div class="single-page-sidebar-single">
+						 <h3>This course includes</h3>
+
+                        <?php //dynamic_sidebar( 'sidebar-singleCourse' ); ?>
+					</div>
+                         <?php //dynamic_sidebar( 'sidebar-singleCourse' ); ?>
+                         <?php //dynamic_sidebar( 'sidebar-custom' ); ?>
+                    
+				 </div> -->
+				 
+				 <?php
+				add_filter('wplms_course_details_widget',function($args){unset($args['price']); return $args;})
+				?>
+
+
+
+			</div><!-- .padder -->
+		</div><!-- #container -->
+	</div>
+</section>	
