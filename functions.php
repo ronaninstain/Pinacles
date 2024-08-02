@@ -48,17 +48,14 @@ function apex_css()
     wp_enqueue_style('common-css', get_stylesheet_directory_uri() . '/assets/css/common.css', null, time());
     wp_enqueue_script('common-Js', get_stylesheet_directory_uri() . '/assets/js/common.js', NULL, 5.2, true);
 
-    // Added by Safat
     wp_enqueue_style('srsheaderCss', get_stylesheet_directory_uri() . '/assets/css/header/header.css', null, time());
     wp_enqueue_script('srsheaderJs', get_stylesheet_directory_uri() . '/assets/js/header.js', null, time(), true);
     wp_enqueue_style('regulated-silder-course-css', get_stylesheet_directory_uri() . '/assets/css/home/regulated-course-card.css', null, time());
     wp_enqueue_style('bundle-course-css', get_stylesheet_directory_uri() . '/assets/css/home/bundle-course-card.css', null, time());
     wp_enqueue_style('tab-course-css', get_stylesheet_directory_uri() . '/assets/css/home/tab-course-card.css', null, time());
 
-    // Added by Hasan
     wp_enqueue_style('singleBlog', get_stylesheet_directory_uri() . '/assets/css/singleBlog.css', null, time());
 
-    // added by arif
     if (is_cart()) {
         wp_enqueue_style('cart-page-style', get_stylesheet_directory_uri() . '/assets/css/cart_style.css', null, '1.0.0');
     }
@@ -83,7 +80,6 @@ add_action('wp_header', 'checkout_page_coupon_hide');
 
 /**
  * Automatically add product to cart on visit
- * author: farhan
  */
 
 add_action('woocommerce_add_to_cart', 'add_product_to_cart_certificate');
