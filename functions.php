@@ -44,8 +44,9 @@ function apex_css()
     }
     wp_enqueue_style('blogs', get_stylesheet_directory_uri() . '/assets/css/blogApex.css', null, 3.2);
     wp_enqueue_style('bundles', get_stylesheet_directory_uri() . '/assets/css/bundles.css', null, 4.2);
-    //common css for global
+    //common css & js for global
     wp_enqueue_style('common-css', get_stylesheet_directory_uri() . '/assets/css/common.css', null, time());
+    wp_enqueue_script('common-Js', get_stylesheet_directory_uri() . '/assets/js/common.js', NULL, 5.2, true);
 
     // Added by Safat
     wp_enqueue_style('srsheaderCss', get_stylesheet_directory_uri() . '/assets/css/header/header.css', null, time());
@@ -53,6 +54,9 @@ function apex_css()
     wp_enqueue_style('regulated-silder-course-css', get_stylesheet_directory_uri() . '/assets/css/home/regulated-course-card.css', null, time());
     wp_enqueue_style('bundle-course-css', get_stylesheet_directory_uri() . '/assets/css/home/bundle-course-card.css', null, time());
     wp_enqueue_style('tab-course-css', get_stylesheet_directory_uri() . '/assets/css/home/tab-course-card.css', null, time());
+
+    // Added by Hasan
+    wp_enqueue_style('singleBlog', get_stylesheet_directory_uri() . '/assets/css/singleBlog.css', null, time());
 
     // added by arif
     if (is_cart()) {
