@@ -10,14 +10,24 @@ function createMultidimensionalArray($courseID)
     $resultArray = array();
     $currentParent = null;
 
-    foreach ($curriculums as $item) {
-        if (get_post_type($item) != 'unit') {
-            $currentParent = $item;
+    if (!empty($curriculums)) {
+        if (is_numeric($curriculums[0])) {
+            $currentParent = get_the_title($courseID);
             $resultArray[$currentParent] = array();
-        } elseif ($currentParent !== null) {
-            $resultArray[$currentParent][] = $item;
+        }
+
+        foreach ($curriculums as $item) {
+            if (!is_numeric($item)) {
+                $currentParent = $item;
+                $resultArray[$currentParent] = array();
+            } else {
+                if ($currentParent !== null) {
+                    $resultArray[$currentParent][] = intval($item);
+                }
+            }
         }
     }
+
     return $resultArray;
 }
 
@@ -39,6 +49,16 @@ $courseDuration = tofriendlytime(($total_duration));
 
 $multidimensionalArray = createMultidimensionalArray($courseID);
 $sectionCount = count($multidimensionalArray);
+
+// Compute total lectures (units only)
+$lectureCount = 0;
+foreach ($multidimensionalArray as $section => $items) {
+    foreach ($items as $item_id) {
+        if (get_post_type($item_id) === 'unit') {
+            $lectureCount++;
+        }
+    }
+}
 
 $average_rating = get_post_meta($courseID, 'average_rating', true);
 $countRating = get_post_meta($courseID, 'rating_count', true);
@@ -95,7 +115,7 @@ $comments = get_comments($args);
         <div class="miniInformations">
             <ul>
                 <li><?php echo $sectionCount; ?> section<?php echo ($sectionCount > 1) ? 's' : ''; ?></li>
-                <li><?php echo count($units); ?> lecture<?php echo (count($units) > 1) ? 's' : ''; ?></li>
+                <li><?php echo $lectureCount; ?> lecture<?php echo ($lectureCount > 1) ? 's' : ''; ?></li>
                 <li><?php echo $courseDuration; ?> total length</li>
             </ul>
             <a href="javascript:void(0);" id="expandAllSections">Expand all sections</a>
@@ -104,6 +124,27 @@ $comments = get_comments($args);
             <?php
             $id = 1;
             foreach ($multidimensionalArray as $key => $item) {
+                // Section-level meta
+                $sectionLectures = 0;
+                $sectionDurationSeconds = 0;
+                foreach ($item as $item_id) {
+                    if (get_post_type($item_id) === 'unit') {
+                        $sectionLectures++;
+                        $durationMinutes = get_post_meta($item_id, 'vibe_duration', true);
+                        if (!empty($durationMinutes)) {
+                            $sectionDurationSeconds += intval($durationMinutes) * 60;
+                        }
+                    }
+                }
+                if ($sectionDurationSeconds >= 3600) {
+                    $sectionHours = floor($sectionDurationSeconds / 3600);
+                    $sectionMinutes = floor(($sectionDurationSeconds % 3600) / 60);
+                    $sectionDurationFormatted = $sectionHours . ' hour ' . $sectionMinutes . ' mins';
+                } else {
+                    $sectionMinutes = floor($sectionDurationSeconds / 60);
+                    $sectionSeconds = $sectionDurationSeconds % 60;
+                    $sectionDurationFormatted = $sectionMinutes . ' m: ' . $sectionSeconds . ' s';
+                }
                 ?>
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -112,6 +153,9 @@ $comments = get_comments($args);
                             class="<?php echo ($id == 1) ? '' : 'collapsed'; ?>">
                             <h4 class="panel-title">
                                 <?php echo $key; ?>
+                                <span class="section-details" style="margin-left:8px; font-weight:400;">
+                                    <?php echo $sectionLectures; ?> <?php echo ($sectionLectures == 1) ? 'lecture' : 'lectures'; ?> • <?php echo $sectionDurationFormatted; ?>
+                                </span>
                             </h4>
                         </a>
                     </div>
@@ -122,26 +166,37 @@ $comments = get_comments($args);
                             <ul>
                                 <?php
                                 foreach ($item as $i) {
-                                    ?>
-                                    <li>
-                                        <div class="videoTitle">
-                                            <img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/video.svg'; ?>"
-                                                alt="video">
-                                            <?php echo get_the_title($i); ?>
-                                        </div>
-                                        <div class="videoDuration">
-                                            <?php
-                                            $curriculumnDuration = get_post_meta($i, 'vibe_duration', true);
-                                            if (!empty($curriculumnDuration)) {
-                                                $seconds = $curriculumnDuration * 60;
-                                                $datetime = new DateTime("@$seconds");
-                                                $timeFormat = $datetime->format('H:i:s');
-                                                echo $timeFormat;
-                                            }
-                                            ?>
-                                        </div>
-                                    </li>
-                                    <?php
+                                    $post_type = get_post_type($i);
+                                    if ($post_type === 'unit') {
+                                        ?>
+                                        <li>
+                                            <div class="videoTitle">
+                                                <img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/video.svg'; ?>"
+                                                    alt="video">
+                                                <a href="<?php echo get_the_permalink($i); ?>"><?php echo get_the_title($i); ?></a>
+                                            </div>
+                                            <div class="videoDuration">
+                                                <?php
+                                                $curriculumnDuration = get_post_meta($i, 'vibe_duration', true);
+                                                if (!empty($curriculumnDuration)) {
+                                                    $seconds = intval($curriculumnDuration) * 60;
+                                                    $datetime = new DateTime("@{$seconds}");
+                                                    echo $datetime->format('H:i:s');
+                                                }
+                                                ?>
+                                            </div>
+                                        </li>
+                                        <?php
+                                    } elseif ($post_type === 'quiz') {
+                                        ?>
+                                        <li>
+                                            <div class="videoTitle">
+                                                <img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/video.svg'; ?>" alt="quiz">
+                                                <?php echo get_the_title($i); ?>
+                                            </div>
+                                        </li>
+                                        <?php
+                                    }
                                 }
                                 ?>
                             </ul>
